@@ -1,0 +1,66 @@
+/* Setting the width,height and border of all the nine cells with class = "cell" in order to get a box like structure.*/
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid;
+/* In order to give the box a shadow effect of 2px.*/
+    box-shadow: 0 0 0 2px;
+    line-height: 75px;
+/* Sets the height of a line box.*/
+    font-size: 50px;
+/* Converts the cursor into a pointer when hovered over the table.*/
+    cursor: pointer;
+}
+
+
+/* Setting the display of the div container with id = "cellContainer" to grid(as it tries to take up the screen space as much as it needed) as it appears as a straight line of nine boxes*/
+#gameContainer{
+    font-family: "Permanent Marker", cursive;
+/*Aligns all of it's content to the center.*/
+    text-align: center;
+    
+}
+#cellContainer{
+    display: grid;
+/*The columns take up the entire size of the screen which is now the div container with id = "gameContainer"*/
+    grid-template-columns: repeat(3, auto);
+/*repeat(3,auto) means that the same template will be followed for 3 columns.Repeat's first argument is no-of-columns and the second is size which is in this case auto(take up the space needed).*/
+    width: 225px;
+    margin: auto;
+}
+.gradient-background {
+    background-color: black;
+    color: #fff;
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+  }
+
+
+ /* styling the button*/
+ #restartBtn{
+    color: #0fa;
+    border: 6px solid #0fa;
+    border-radius:15px;
+    padding: 15px 25px;
+    font-size: 30px;
+    font-family: tahoma;
+    cursor: pointer;
+    font-weight: bold;
+    filter: drop-shadow(0 0 15px #0fa) drop-shadow(0 0 50px #0fa) contrast(2) brightness(2);
+    transition: .5s;
+    margin-top: 50px;
+  }
+  
+  #restartBtn:hover {
+    color: #fff;
+    background-color: #0fa;
+    filter: drop-shadow(0 0 20px #0fa) contrast(2) brightness(2);
+  }
+  

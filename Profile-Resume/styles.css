@@ -1,0 +1,31 @@
+.gradient-background {
+    background: linear-gradient(300deg, #106f8f, #2cb0cb, #f7fff4f3);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+#title{
+    color : azure;
+  }
+h1{
+    color: azure;
+     
+}
+ul{
+  color: azure;
+}
+.top{
+  color: #05a3c3;
+}
+h1{
+  font-family: 'Cinzel Decorative', serif;
+
+}
+h2 {
+  font-family: 'Cinzel Decorative', serif;
+}
+h3{
+  font-family: 'Cinzel Decorative', serif;
+}
+p{
+  font-family: 'Sometype Mono', monospace;
+}

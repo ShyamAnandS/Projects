@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!--The line which links the "CSS" file to this HTML file.-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="gradient-background">
+    
+        <div class="players">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+        </div>
+        
+<!--A container with id='gameContainer' which encloses the whole game.-->
+    <div id="gameContainer">
+<!--A container with id='cellContainer' which encloses the 9 boxes with class='cell'.It is actually a table.-->
+        <h1>Tic Tac Toe</h1>
+        <div id="cellContainer">
+            <div cellIndex="0" class="cell"></div>
+            <div cellIndex="1" class="cell"></div>
+            <div cellIndex="2" class="cell"></div>
+            <div cellIndex="3" class="cell"></div>
+            <div cellIndex="4" class="cell"></div>
+            <div cellIndex="5" class="cell"></div>
+            <div cellIndex="6" class="cell"></div>
+            <div cellIndex="7" class="cell"></div>
+            <div cellIndex="8" class="cell"></div>
+        </div>
+        <h2 id="statusText"></h2>
+<!--A button to restart the game.-->
+        <button id="restartBtn">Restart</button>
+    </div>
+<!--The line which links the "JavaScript" file to this HTML file.-->
+<!--The js and CSS files are linked so that the changes made using these HTML components and the functions created  will be in effect.-->
+    <script src="index.js"></script>
+</body>
+</html>
